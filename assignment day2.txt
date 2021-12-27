@@ -1,0 +1,44 @@
+1. List 5 difference between Browser JS(console) v Nodejs
+
+->Nodejs
+
+*   Node doesn’t have a predefined “window” object cause it doesn’t have a window to draw anything.
+*   “location” object is related to a particular url; that means it is for page specific. So, node doesn’t require that.
+*    Ofcourse Node doesn’t have “document” object also, cause it never have to render anything in a page.
+*   Node has “global”, which is a predefined global object. It contains several functions that are not available in browsers, cause they are needed for server side works only.
+*   “require” object is predefined in Node which is used to include modules in the app.
+
+->Browser JS(console)
+*   “window” is a predefined global object which has functions and attributes, that have to deal with window that has been drawn.
+*   “location” is another predefined object in browsers, that has all the information about the url we have loaded.
+*   “document”, which is also another predefined global variable in browsers, has the html which is rendered.
+*   Browsers may have an object named “global”, but it will be the exact one as “window”.
+*   Browsers don’t have “require” predefined. You may include it in your app for asynchronous file loading.
+*   Moduling is not mandatory in client side JavaScript, i.e. in browsers.
+
+2. How browser actually  render a website
+*parsing is process in which data flows throgh the wesite while searched
+*when something is searched in broser the broser goes through the diifernt rendering units in orreder to collect the informations
+*there are main units of parings like HTML parsing, CSS parsing and JS engine
+*DOM and CSSOM combines the two object models, style resolution, this is actuall representation what u will see on screen 
+*DOM and CSSOM havemultiple trees like renderobject, renderstyle, renderlayer, line box
+
+3. Execute the below code and write your description in txt file
+typeof(1)
+Number,buz data type 1 is number
+typeof(1.1)
+NUmber, buz data type 1.1 is integer, it is also a number
+typeof('1.1')
+string, buz anything inside a invited comma represent string,data type is string
+typeof(true)
+Boolean, buz any data type true or false represent boolean 
+typeof(null)
+object, it is unkonown, why it shows object
+typeof(undefined)
+undefined, undefined is also a data typer
+typeof([])
+object, data typr of an array is object.
+typeof({})
+object, buZ {} represent obejct and object is data type
+typeof(NaN)
+number, NaN means not a number but js is trying to convert it to number, so number is data type
